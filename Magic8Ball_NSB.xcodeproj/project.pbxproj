@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		047C634F27A49D9F00612DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C634E27A49D9F00612DEE /* AppDelegate.swift */; };
-		047C635127A49D9F00612DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C635027A49D9F00612DEE /* SceneDelegate.swift */; };
-		047C635327A49D9F00612DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C635227A49D9F00612DEE /* ViewController.swift */; };
-		047C635627A49D9F00612DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C635427A49D9F00612DEE /* Main.storyboard */; };
 		047C635827A49DA100612DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047C635727A49DA100612DEE /* Assets.xcassets */; };
 		047C635B27A49DA100612DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C635927A49DA100612DEE /* LaunchScreen.storyboard */; };
+		047C636827A4B31C00612DEE /* Magic8BallCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C636727A4B31C00612DEE /* Magic8BallCoordinator.swift */; };
+		047C636A27A4B3A500612DEE /* Magic8BallFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C636927A4B3A500612DEE /* Magic8BallFactory.swift */; };
+		047C636C27A4B3E700612DEE /* Magic8BallUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C636B27A4B3E700612DEE /* Magic8BallUIView.swift */; };
+		047C636E27A4B4E200612DEE /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C636D27A4B4E200612DEE /* GlobalConstants.swift */; };
+		047C637027A4B84600612DEE /* Magic8BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C636F27A4B84600612DEE /* Magic8BallViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		047C634B27A49D9F00612DEE /* Magic8Ball_NSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magic8Ball_NSB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047C634E27A49D9F00612DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		047C635027A49D9F00612DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		047C635227A49D9F00612DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		047C635527A49D9F00612DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		047C635727A49DA100612DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047C635A27A49DA100612DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047C635C27A49DA100612DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047C636727A4B31C00612DEE /* Magic8BallCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallCoordinator.swift; sourceTree = "<group>"; };
+		047C636927A4B3A500612DEE /* Magic8BallFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallFactory.swift; sourceTree = "<group>"; };
+		047C636B27A4B3E700612DEE /* Magic8BallUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallUIView.swift; sourceTree = "<group>"; };
+		047C636D27A4B4E200612DEE /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		047C636F27A4B84600612DEE /* Magic8BallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		047C634D27A49D9F00612DEE /* Magic8Ball_NSB */ = {
 			isa = PBXGroup;
 			children = (
+				047C636627A49E3E00612DEE /* View */,
+				047C636527A49E3300612DEE /* Utils */,
+				047C636427A49E2A00612DEE /* Factory */,
+				047C636327A49E2000612DEE /* Coordinator */,
 				047C634E27A49D9F00612DEE /* AppDelegate.swift */,
-				047C635027A49D9F00612DEE /* SceneDelegate.swift */,
-				047C635227A49D9F00612DEE /* ViewController.swift */,
-				047C635427A49D9F00612DEE /* Main.storyboard */,
 				047C635727A49DA100612DEE /* Assets.xcassets */,
-				047C635927A49DA100612DEE /* LaunchScreen.storyboard */,
 				047C635C27A49DA100612DEE /* Info.plist */,
 			);
 			path = Magic8Ball_NSB;
+			sourceTree = "<group>";
+		};
+		047C636327A49E2000612DEE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				047C636727A4B31C00612DEE /* Magic8BallCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		047C636427A49E2A00612DEE /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				047C636927A4B3A500612DEE /* Magic8BallFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		047C636527A49E3300612DEE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				047C636D27A4B4E200612DEE /* GlobalConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		047C636627A49E3E00612DEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				047C635927A49DA100612DEE /* LaunchScreen.storyboard */,
+				047C636B27A4B3E700612DEE /* Magic8BallUIView.swift */,
+				047C636F27A4B84600612DEE /* Magic8BallViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +165,6 @@
 			files = (
 				047C635B27A49DA100612DEE /* LaunchScreen.storyboard in Resources */,
 				047C635827A49DA100612DEE /* Assets.xcassets in Resources */,
-				047C635627A49D9F00612DEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +175,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047C635327A49D9F00612DEE /* ViewController.swift in Sources */,
+				047C636827A4B31C00612DEE /* Magic8BallCoordinator.swift in Sources */,
 				047C634F27A49D9F00612DEE /* AppDelegate.swift in Sources */,
-				047C635127A49D9F00612DEE /* SceneDelegate.swift in Sources */,
+				047C637027A4B84600612DEE /* Magic8BallViewController.swift in Sources */,
+				047C636E27A4B4E200612DEE /* GlobalConstants.swift in Sources */,
+				047C636C27A4B3E700612DEE /* Magic8BallUIView.swift in Sources */,
+				047C636A27A4B3A500612DEE /* Magic8BallFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		047C635427A49D9F00612DEE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				047C635527A49D9F00612DEE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		047C635927A49DA100612DEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +326,6 @@
 				INFOPLIST_FILE = Magic8Ball_NSB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +353,6 @@
 				INFOPLIST_FILE = Magic8Ball_NSB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
